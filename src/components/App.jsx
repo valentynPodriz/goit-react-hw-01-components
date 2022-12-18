@@ -1,11 +1,10 @@
-import user from './path/to/user';
-import data from './path/to/data';
-import friends from './path/to/friends';
+import user from '../to/user';
+import data from '../to/data';
+import friends from '../to/friends';
 import Profile from './path/profile/Profile';
 import Statistics from './path/statistics/Statistics';
-import StatisticsList from './path/statistics/StatisticsList';
 import FriendList from './path/friendList/FriendList';
-import transactions from './path/to/transactions';
+import transactions from '../to/transactions';
 import TransactionHistory from './path/transactionHistory/TransactionHistory'
 
 
@@ -23,13 +22,10 @@ import TransactionHistory from './path/transactionHistory/TransactionHistory'
   avatar={user.avatar}
   stats={user.stats}
       />
-   <Statistics title="Upload stats">
-        <StatisticsList stats={data} />
-      </Statistics>
+<Statistics title="Upload stats" stats={data} />
+<Statistics stats={data} />
       <FriendList friends={friends} />
-
       <TransactionHistory items={transactions} />
-
     </div>
  
   );   
